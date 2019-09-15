@@ -28,7 +28,8 @@ class Application
       @@cart << add_term
       resp.write "added #{add_term}"
     else 
-      resp.write "We don't have that item"
+      resp.write "We don't have that item!"
+    end
     else
       resp.write "Path Not Found"
     end

@@ -21,7 +21,6 @@ class Application
     else
       resp.write @@cart
     end
-  end
       
     else
       resp.write "Path Not Found"

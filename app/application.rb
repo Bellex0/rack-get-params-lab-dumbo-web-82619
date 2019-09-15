@@ -30,10 +30,13 @@ class Application
   end
   
   def cart
-    if req.path.match(/cart/)
-    resp.write @@cart 
+    req.path.match(/cart/)
+
     if @@cart.empty?
       resp.write "Your cart is empty."
+    else
+      resp.write @@cart
+    end
   end
   
 end

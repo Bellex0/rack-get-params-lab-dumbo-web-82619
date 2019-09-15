@@ -29,8 +29,10 @@ class Application
     end
   end
   
-  def req.path.match(/cart/)
-    resp.write @@cart
+  def cart
+    if req.path.match(/cart/)
+    resp.write @@cart 
+    if @@cart
   end
   
 end
